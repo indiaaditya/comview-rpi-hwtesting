@@ -23,6 +23,7 @@ console.log('Pressing the character followed by enter at the end \n will toggle 
 
 standard_input.on('data', function (data) {
 
+    console.log('Data:' + data[0]);
     switch(data[0]){
         case 'l':
         case 'L':
