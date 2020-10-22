@@ -24,7 +24,7 @@ console.log('Pressing the character followed by enter at the end \n will toggle 
 standard_input.on('data', function (data) {
 
     console.log('Data:' + data[0]);
-    switch(data[0]){
+    switch(data[0].toString()){
         case "l":
         case "L":
             toggleOutput(RPI_STAT_LED,'RPI_STAT_LED ');
