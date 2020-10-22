@@ -25,6 +25,7 @@ standard_input.on('data', function (data) {
 
     console.log('Data:' + data[0]);
     switch(data[0]){
+        case 108:
         case 'l':
         case 'L':
             toggleOutput(RPI_STAT_LED,'RPI_STAT_LED ');
