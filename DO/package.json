@@ -1,0 +1,21 @@
+{
+  "name": "do",
+  "version": "1.0.0",
+  "description": "For operating the digital outputs of RPi4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RPi",
+    "Digital",
+    "Output",
+    "Digital",
+    "Output"
+  ],
+  "author": "Aditya Ayachit, Indiaaditya Networks",
+  "license": "ISC",
+  "dependencies": {
+    "onoff": "^6.0.1"
+  }
+}
