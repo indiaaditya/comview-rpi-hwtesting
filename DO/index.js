@@ -33,8 +33,8 @@ standard_input.on('data', function (data) {
         case 82/*"R"*/:
             toggleOutput(RPI_EXP_RST,'RPI_EXP_RST ');
             break;
-        case 120/*"w"*/:
-        case 88/*"W"*/:
+        case 119/*"w"*/:
+        case 87/*"W"*/:
             toggleOutput(RPI_SYS_WDOG,'RPI_SYS_WDOG ');
             break;
         case 117/*"u"*/:
