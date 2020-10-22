@@ -23,21 +23,25 @@ console.log('Pressing the character followed by enter at the end \n will toggle 
 
 standard_input.on('data', function (data) {
 
-    switch(data){
+    switch(data[0]){
         case 'l':
+        case 'L':
             toggleOutput(RPI_STAT_LED,'RPI_STAT_LED ');
             break;
         case 'r':
+        case 'R':
             toggleOutput(RPI_EXP_RST,'RPI_EXP_RST ');
             break;
         case 'w':
+        case 'W':
             toggleOutput(RPI_SYS_WDOG,'RPI_SYS_WDOG ');
             break;
         case 'u':
+        case 'U':
             toggleOutput(RPI_UARTS_RST,'RPI_UARTS_RST ');
             break;
         default:
-            console.log('Invalid option');
+            console.log('Invalid option::'+ data);
             break;
     }
 
