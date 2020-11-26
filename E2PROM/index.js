@@ -28,10 +28,11 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
     }
     else{
         console.log('contents:' + contents);
+        var buffer = contents.split();
         console.log('This is the length of the output:' + contents.length);
         //let lclBuffer = Buffer.from(contents);
         console.log('Location:Value' );
-        contents.forEach(printResult);
+        buffer.forEach(printResult);
     }
 });
 
