@@ -29,12 +29,12 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
     else{
         console.log('contents:' + contents);
         let lclBuffer = Buffer.from(contents,0,256);
+        console.log('Location:Value' );
         lclBuffer.forEach(printResult);
     }
 });
 
 function printResult(element,index){
-    console.log('Location:Value' )
     console.log(index + ': ' + '0x' + element.toString(16));
 }
 //console.log('Result:' + res);
