@@ -9,9 +9,9 @@ var filePath = '';
 let win32FileName = "e2prom";
 let linuxFileName = "/sys/class/i2c-dev/i2c-1/device/1-0050/eeprom";
 if (lclOS === "win32")
-    path.basename = win32FileName;
+    filePath = win32FileName;
 else
-    path.basename = linuxFileName;
+    filePath = linuxFileName;
 
 const readArr = new Uint8Array();
 const writeArr = new Uint8Array();
@@ -22,7 +22,7 @@ const writeArr = new Uint8Array();
 });*/
 
 
-let res = fs.readFile(win32FileName,'utf8',function(err,contents){
+let res = fs.readFile(filePath,'utf8',function(err,contents){
     if(err){
         console.log(err);
     }
