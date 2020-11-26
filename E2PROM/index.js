@@ -28,7 +28,7 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
     }
     else{
         console.log('contents:' + contents);
-        console.log('This is the length of the output:' + contents);
+        console.log('This is the length of the output:' + contents.length);
         let lclBuffer = Buffer.from(contents,0,256);
         console.log('Location:Value' );
         lclBuffer.forEach(printResult);
