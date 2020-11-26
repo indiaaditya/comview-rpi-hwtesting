@@ -1,0 +1,14 @@
+{
+  "name": "e2prom",
+  "version": "1.0.0",
+  "description": "Utility to test the read and write to the e2prom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e2prom"
+  ],
+  "author": "Indiaaditya Networks, Aditya Ayachit",
+  "license": "ISC"
+}
