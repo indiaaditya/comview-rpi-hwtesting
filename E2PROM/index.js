@@ -29,7 +29,7 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
     else{
         console.log('contents:' + contents);
         console.log('This is the length of the output:' + contents.length);
-        let lclBuffer = Buffer.from(contents,0,256);
+        let lclBuffer = Buffer.from(contents);
         console.log('Location:Value' );
         lclBuffer.forEach(printResult);
     }
