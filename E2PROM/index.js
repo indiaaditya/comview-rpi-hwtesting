@@ -36,7 +36,8 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
     }
 });
 
-function printResult(element,index){
-    console.log(index + ': ' + '0x' + element.toString(16));
+function printResult(rString){
+    for (let i = 0; i < rString.length; i++)
+        console.log(i + ': ' + '0x' + rString.toString(16));
 }
 //console.log('Result:' + res);
