@@ -13,8 +13,8 @@ if (lclOS === "win32")
 else
     filePath = linuxFileName;
 
-const readArr = new Uint8Array();
-const writeArr = new Uint8Array();
+const readArr = '';
+const writeArr = '';
 
 /*fs.open(Buffer.from(win32FileName),'r',(err,fd) =>{
     if(err)
@@ -28,16 +28,16 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
     }
     else{
         console.log('contents:' + contents);
-        var buffer = contents.split();
+        //var buffer = contents.split();
         console.log('This is the length of the output:' + contents.length);
         //let lclBuffer = Buffer.from(contents);
-        console.log('Location:Value' );
-        printResult(buffer);
+        //console.log('Location:Value' );
+        printResult(contents);
     }
 });
 
 function printResult(rString){
     for (let i = 0; i < rString.length; i++)
-        console.log(i + ': ' + '0x' + rString[i].toString(16));
+        console.log(i + ': ' + '0x' + rString.charAt(i));
 }
 //console.log('Result:' + res);
