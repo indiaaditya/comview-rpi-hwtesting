@@ -38,6 +38,6 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
 
 function printResult(rString){
     for (let i = 0; i < rString.length; i++)
-        console.log(i + ': ' + '0x' + rString.charAt(i));
+        console.log(i + ': ' + '0x' + rString.charAt(i).toString(16));
 }
 //console.log('Result:' + res);
