@@ -37,7 +37,43 @@ let res = fs.readFile(filePath,'utf8',function(err,contents){
 });
 
 function printResult(rString){
-    for (let i = 0; i < rString.length; i++)
-        console.log(i + ': ' + '0x' + rString.charAt(i).toString(16));
+    for (let i = 0; i < rString.length; i++){
+        console.log(i + ': ' + '0x' + (rString.charAt(i)).charCodeAt(0));
+    }
 }
+
+function readByte(rLocation){
+    let lclByte = 0;
+
+    return lclByte
+}
+
+function writeByte(rLocation,rValue){
+
+}
+
+function readInt16(rLocation){
+
+}
+
+function writeInt16(rLocation,rValue){
+
+}
+
+function readInt32(rLocation){
+
+}
+
+function writeInt32(rLocation,rValue){
+
+}
+
+function readString(rLocation,rBytes){
+
+}
+
+function writeString(rLocation,rString){
+
+}
+
 //console.log('Result:' + res);
